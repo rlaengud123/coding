@@ -1,0 +1,6 @@
+﻿  소스.cpp
+c:\users\lenovo\source\repos\project2\project2\소스.cpp(39): warning C4101: 'filename' :참조되지 않은 지역 변수입니다.
+c:\users\lenovo\source\repos\project2\project2\소스.cpp(147): warning C4101: 'count' :참조되지 않은 지역 변수입니다.
+c:\users\lenovo\source\repos\project2\project2\소스.cpp(200): warning C4477: 'printf' : 서식 문자열 '%c'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'std::string'입니다.
+c:\users\lenovo\source\repos\project2\project2\소스.cpp(219): warning C4172: 지역 변수 또는 임시: result의 주소를 반환하고 있습니다.
+  Project2.vcxproj -> C:\Users\lenovo\source\repos\Project2\Debug\Project2.exe

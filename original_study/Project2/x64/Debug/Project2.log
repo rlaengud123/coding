@@ -1,0 +1,12 @@
+﻿  소스.cpp
+c:\users\lenovo\google 드라이브\코딩\연구 원본\project2\소스.cpp(47): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+c:\users\lenovo\google 드라이브\코딩\연구 원본\project2\소스.cpp(38): warning C4101: 'filename' :참조되지 않은 지역 변수입니다.
+c:\users\lenovo\google 드라이브\코딩\연구 원본\project2\소스.cpp(144): warning C4101: 'count' :참조되지 않은 지역 변수입니다.
+c:\users\lenovo\google 드라이브\코딩\연구 원본\project2\소스.cpp(295): warning C4101: 'j1' :참조되지 않은 지역 변수입니다.
+c:\users\lenovo\google 드라이브\코딩\연구 원본\project2\소스.cpp(298): warning C4101: 'i5' :참조되지 않은 지역 변수입니다.
+c:\users\lenovo\google 드라이브\코딩\연구 원본\project2\소스.cpp(294): warning C4101: 'i2' :참조되지 않은 지역 변수입니다.
+c:\users\lenovo\google 드라이브\코딩\연구 원본\project2\소스.cpp(294): warning C4101: 'i1' :참조되지 않은 지역 변수입니다.
+c:\users\lenovo\google 드라이브\코딩\연구 원본\project2\소스.cpp(299): warning C4101: 'quan' :참조되지 않은 지역 변수입니다.
+  소스1.cpp
+  코드를 생성하고 있습니다...
+  Project2.vcxproj -> C:\Users\lenovo\Google 드라이브\코딩\연구 원본\x64\Debug\Project2.exe
