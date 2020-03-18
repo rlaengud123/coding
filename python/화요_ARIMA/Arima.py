@@ -86,10 +86,10 @@ per_product.to_csv("per_product_month.csv", encoding='cp949')
 per_product = pd.read_csv("per_product_month.csv", encoding='cp949')
 
 
-for i in tqdm.trange(len(per_product["product"])):
-    if ("유흥" in per_product["product"][i]) or ("가정" in per_product["product"][i]) or ("군납" in per_product["product"][i]) or ("업소" in per_product["product"][i]) or ("수출" in per_product["product"][i]) or ("면세" in per_product["product"][i]):
-        per_product["product"][i] = per_product["product"][i].replace(" ", "")
-        per_product["product"][i] = per_product["product"][i][0:len(per_product["product"][i])-3]
+# for i in tqdm.trange(len(per_product["product"])):
+#     if ("유흥" in per_product["product"][i]) or ("가정" in per_product["product"][i]) or ("군납" in per_product["product"][i]) or ("업소" in per_product["product"][i]) or ("수출" in per_product["product"][i]) or ("면세" in per_product["product"][i]):
+#         per_product["product"][i] = per_product["product"][i].replace(" ", "")
+#         per_product["product"][i] = per_product["product"][i][0:len(per_product["product"][i])-3]
         
   
 product_list1 = list(set(per_product['product']))
