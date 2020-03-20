@@ -41,38 +41,115 @@ while(True):
         print("2 : 삭제\n")
         print("3 : 검색하기\n")
         print("n : 뒤로가기\n")
-
         option_num = str(input())
         print("\n")
 
         if option_num == '1':
             print("추가하기 입니다.\n")
-            print("구분1을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
-            option_num_1_1 = str(input())
-            if option_num_1_1 == 'n':
-                    break
+            option1 = 0
+            option2 = 0
+            option3 = 0
+
             if table_num == '1':
+                print("구분1을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
+                option_num_1_1 = str(input())
+                if option_num_1_1 == 'n':
+                        break
+                if option_num_1_1 not in list(set(df['구분1'])):
+                    option1 = 1
+                else:
+                    df2 = df[df['구분1'] == option_num_1_1]
                 print("구분2을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
                 option_num_1_2 = str(input())
                 if option_num_1_2 == 'n':
                         break
-            print("거래처코드을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
-            option_num_1_3 = str(input())
-            if option_num_1_3 == 'n':
-                    break
-            print("도매장명을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
-            option_num_1_4 = str(input())
-            if option_num_1_4 == 'n':
-                    break
-            if table_num == '1':
+                if option1 == 0:
+                    if option_num_1_2 not in list(set(df2['구분2'])):
+                        option2 = 1
+                    else:
+                        df3 = df2[df2['구분2'] == option_num_1_2]
+                print("거래처코드을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
+                option_num_1_3 = str(input())
+                if option_num_1_3 == 'n':
+                        break
+                if option2 == 0:
+                    if option_num_1_3 not in list(set(df3['거래처코드'])):
+                        option3 = 1
+                    else:
+                        df4 = df3[df3['거래처코드'] == int(option_num_1_3)]
+                print("도매장명을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
+                option_num_1_4 = str(input())
+                if option_num_1_4 == 'n':
+                        break
                 print("품목을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
                 option_num_1_5 = str(input())
                 if option_num_1_5 == 'n':
                         break
-            if table_num == '1':
-                
+
+
             elif table_num == '2':
-                
+                print("구분1을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
+                option_num_1_1 = str(input())
+                if option_num_1_1 == 'n':
+                        break
+                if option_num_1_1 not in list(set(df['구분1'])):
+                    option1 = 1
+                else:
+                    df2 = df[df['구분1'] == option_num_1_1]
+                    print(df2)
+                print("거래처코드을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
+                option_num_1_3 = str(input())
+                if option_num_1_3 == 'n':
+                        break
+                print("도매장명을 입력하여 주세요. 뒤로 가시려면 n을 입력해주세요.\n")
+                option_num_1_4 = str(input())
+                if option_num_1_4 == 'n':
+                        break
+
+           
+            
+            
+            
+            if table_num == '1':
+                if option1 == 0:
+                    if option2 == 0:
+                        if option3 == 0:
+                            index_ = df4.index[-1]
+                            temp1 = df[:index_]
+                            temp2 = df[index_:]
+                            temp1.loc[len(temp1)] = [option_num_1_1, option_num_1_2, int(option_num_1_3), option_num_1_4, option_num_1_5, 0, 0]
+                            df = pd.concat([temp1,temp2])
+                            break
+                        elif option3 == 1:
+                            index_ = df3.index[-1] + 1
+                            temp1 = df[:index_]
+                            temp2 = df[index_:]
+                            temp1.loc[len(temp1)] = [option_num_1_1, option_num_1_2, int(option_num_1_3), option_num_1_4, option_num_1_5, 0, 0]
+                            temp1.loc[len(temp1)+1] = [option_num_1_1, option_num_1_2, int(option_num_1_3), option_num_1_4, '합 계', 0, 0]
+                            df = pd.concat([temp1,temp2])
+                            break
+                    elif option2 == 1:
+                        index_ = df2.index[-1] + 1
+                        temp1 = df[:index_]
+                        temp2 = df[index_:]
+                        temp1.loc[len(temp1)] = [option_num_1_1, option_num_1_2, int(option_num_1_3), option_num_1_4, option_num_1_5, 0, 0]
+                        temp1.loc[len(temp1)+1] = [option_num_1_1, option_num_1_2, int(option_num_1_3), option_num_1_4, '합 계', 0, 0]
+                        df = pd.concat([temp1,temp2])
+                        break
+                elif option1 == 1:
+                    df.loc[len(df)] = [option_num_1_1, option_num_1_2, int(option_num_1_3), option_num_1_4, option_num_1_5, 0, 0]
+                    break
+            elif table_num == '2':
+                if option1 == 0:
+                    index_ = df2.index[-1] + 1
+                    temp1 = df[:index_]
+                    temp2 = df[index_:]
+                    temp1.loc[len(temp1)] = [option_num_1_1, int(option_num_1_3), option_num_1_4, 0]
+                    df = pd.concat([temp1,temp2])
+                    break
+                elif option1 == 1:
+                    df.loc[len(df)] = [option_num_1_1, int(option_num_1_3), option_num_1_4, 0]
+                    break
 
         elif option_num == '2':
             print("삭제하기 입니다.\n")
