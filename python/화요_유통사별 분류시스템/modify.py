@@ -1,4 +1,5 @@
-#%%
+# -*- coding: utf-8 -*- 
+
 import pandas as pd
 import tqdm
 import os
@@ -10,7 +11,7 @@ from matplotlib.dates import DateFormatter
 import matplotlib.font_manager as fm
 import numpy as np
 
-#%%
+
 while(True):
     path = './dont_delete'
 
@@ -34,7 +35,7 @@ while(True):
 
     file_path = path + "/" + table_name
     df = pd.read_csv(file_path)
-#%%
+
     while(True):
         print("옵션을 선택하여 주세요.\n")
         print("1 : 추가\n")
@@ -307,6 +308,3 @@ while(True):
             break
         else:
             print("잘못입력하였습니다.\n")
-
-
-# %%
