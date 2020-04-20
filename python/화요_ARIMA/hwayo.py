@@ -16,7 +16,7 @@ from statsmodels.tsa.arima_model import ARIMA
 
 
 # %%
-data = pd.read_csv("new.csv", encoding='utf-8')
+data = pd.read_csv("new2.csv", encoding='utf-8')
 
 data = data.drop(data.columns[[1,2,5,6,8,9,11,12,14,15,16,17,18,19,20,21,22,23]], axis='columns')
 
