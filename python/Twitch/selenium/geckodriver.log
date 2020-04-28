@@ -384,3 +384,99 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
 JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
 JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 76: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1587811983434	Marionette	INFO	Stopped listening on port 2423
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1587811987403	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\FOR_SO~1\\AppData\\Local\\Temp\\rust_mozprofileUwM1XG"
+1587811987799	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587811988338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587811988338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587811988338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587811988338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1587811990900	Marionette	INFO	Listening on port 1469
+1587811991222	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+1587813513910	Marionette	INFO	Stopped listening on port 1469
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1587813534285	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\FOR_SO~1\\AppData\\Local\\Temp\\rust_mozprofileumhiAY"
+1587813534661	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587813535181	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587813535181	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587813535181	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587813535182	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1587813537754	Marionette	INFO	Listening on port 6171
+1587813538112	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+1587814395396	Marionette	INFO	Stopped listening on port 6171
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+nsion.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587814382714	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587814382714	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587814382714	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587814382714	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1587814385269	Marionette	INFO	Listening on port 8701
+1587814385604	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+1587814754284	Marionette	INFO	Stopped listening on port 8701
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+nsion.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587814736752	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587814736752	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587814736752	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587814736752	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1587814739457	Marionette	INFO	Listening on port 9953
+1587814739635	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+JavaScript warning: http://www.inven.co.kr/common/lib/js/adns.js?v=200421a, line 37: unreachable code after return statement
+[Child 28708, Chrome_ChildThread] WARNING: pipe error: 232: file Z:/task_1585933993/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 514
+1587815132496	Marionette	INFO	Stopped listening on port 9953
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
