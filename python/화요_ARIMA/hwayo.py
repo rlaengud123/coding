@@ -16,7 +16,7 @@ from statsmodels.tsa.arima_model import ARIMA
 
 
 # %%
-data = pd.read_csv("new2.csv", encoding='utf-8')
+data = pd.read_csv("new.csv", encoding='utf-8-sig')
 
 data = data.drop(data.columns[[1,2,5,6,8,9,11,12,14,15,16,17,18,19,20,21,22,23]], axis='columns')
 
@@ -49,7 +49,7 @@ for _ in tqdm.trange(len(data['date'])):
 
 pre_data = data #전처리 후 저장
 
-pre_data.to_csv("pre-data.csv", header=True, index=False, encoding='cp949')
+pre_data.to_csv("pre-data.csv", header=True, index=False, encoding='utf-8-sig')
 
 
 # %%
@@ -66,24 +66,24 @@ pre_data = pre_data.drop(pre_data.columns[[1,2,5,6]], axis='columns')
 
 per_month = pre_data.groupby(['date', 'product']).sum()
 
-per_month.to_csv("per_month.csv", header=True, index=True, encoding='cp949')
+per_month.to_csv("per_month.csv", header=True, index=True, encoding='utf-8-sig')
 
 
 # %%
 #품목별 예측 전처리
 
-# data_month = pd.read_csv("per_month.csv", encoding='cp949')
+# data_month = pd.read_csv("per_month.csv", encoding='utf-8-sig')
 
-data_month = pd.read_csv("original/per_month_original.csv", encoding='cp949')
-new_month = pd.read_csv("per_month.csv", encoding='cp949')
+data_month = pd.read_csv("original/per_month_original.csv", encoding='utf-8-sig')
+new_month = pd.read_csv("per_month.csv", encoding='utf-8-sig')
 data_month = pd.concat([data_month, new_month])
 data_month = data_month.reset_index()
 data_month = data_month.drop(data_month.columns[[0]], axis='columns')
-data_month.to_csv("original/per_month_original.csv", header=True, index=False, encoding='cp949')
+data_month.to_csv("original/per_month_original.csv", header=True, index=False, encoding='utf-8-sig')
 per_product = data_month
 per_product = per_product.groupby(['product', 'date']).sum()
-per_product.to_csv("per_product_month.csv", encoding='cp949')
-per_product = pd.read_csv("per_product_month.csv", encoding='cp949')
+per_product.to_csv("per_product_month.csv", encoding='utf-8-sig')
+per_product = pd.read_csv("per_product_month.csv", encoding='utf-8-sig')
 
 
 # for i in tqdm.trange(len(per_product["product"])):
@@ -103,7 +103,7 @@ for i in range(0,len(product_list1)):
 
 for i in tqdm.trange(0,len(product_list2)):
     path = "per_product_month/" + product_list1[i] + ".csv"
-    per_product.loc[product_list2[i]].to_csv(path, header=True, index=True, encoding='cp949')
+    per_product.loc[product_list2[i]].to_csv(path, header=True, index=True, encoding='utf-8-sig')
 
 
 # %%
@@ -131,7 +131,7 @@ pairs.sort(key=lambda s: s[0], reverse=True)
 
 for j in range(0, len(pairs)):
   path_product = path_dir + "/" + pairs[j][1]
-  product = pd.read_csv(path_product, encoding='cp949')
+  product = pd.read_csv(path_product, encoding='utf-8-sig')
   product['quantity'] = product['quantity'].astype(float)
   if len(product) > 12:
     for i in range(0,len(product)):
@@ -149,7 +149,6 @@ for j in range(0, len(pairs)):
     model = ARIMA(data, order=(1,1,0))
     model_fit = model.fit(trend='c',full_output=True, disp=5)
     print(model_fit.summary())
-
     fig, ax = plt.subplots()
     fig.suptitle('forcast')
     ax = data.plot(ax=ax)
@@ -168,7 +167,7 @@ name = int(str(data_month['date'][len(data_month)-1])[4:6])+1
 if name >= 12:
   name = 1
 filename = str(name) + '월 판매량 예측.csv'
-forecast.to_csv(filename, header=True, index=False, encoding='cp949')
+forecast.to_csv(filename, header=True, index=False, encoding='utf-8-sig')
 
 
 # %%

@@ -28,13 +28,13 @@ while(True):
         table_name = "table2.csv"
         print(f"{table_name}이 선택되었습니다.\n")
     elif table_num == 'n':
-        df.to_csv(file_path, index=False)
+        df.to_csv(file_path, index=False, encoding='utf-8-sig')
         break
     else:
         print("잘못입력하셧습니다.\n")
 
     file_path = path + "/" + table_name
-    df = pd.read_csv(file_path)
+    df = pd.read_csv(file_path,encoding='utf-8-sig')
 
     while(True):
         print("옵션을 선택하여 주세요.\n")

@@ -4,15 +4,8 @@
 import pandas as pd
 import tqdm
 import os
-import matplotlib
-import matplotlib.pyplot as plt
-import datetime
-import matplotlib.dates as mdates
-from matplotlib.dates import DateFormatter
-import matplotlib.font_manager as fm
 import numpy as np
-from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-from statsmodels.tsa.arima_model import ARIMA
+
 
 
 # font_location = 'C:\\Windows\Fonts\나눔고딕코딩.ttf'
@@ -20,7 +13,7 @@ from statsmodels.tsa.arima_model import ARIMA
 
 
 # %%
-data = pd.read_csv("./data/hwayo.csv", encoding='utf-8')
+data = pd.read_csv("./data/hwayo.csv", encoding='utf-8-sig')
 
 data = data.drop(data.columns[[1,2,5,6,8,9,11,12,14,15,16,17,18,19,20,21,22,23]], axis='columns')
 
@@ -54,24 +47,25 @@ for _ in tqdm.trange(len(data['date'])):
 
 original2 = data #전처리 후 저장
 
-original2.to_csv("./delete/pre-data.csv", header=True, index=False, encoding='cp949')
+original2.to_csv("./delete/pre-data.csv", header=True, index=False, encoding='utf-8-sig')
 
 
 
-data_buyer = pd.read_csv("./delete/pre-data.csv", encoding='cp949')
+data_buyer = pd.read_csv("./delete/pre-data.csv", encoding='utf-8-sig')
 
 data_buyer = data_buyer.drop(data_buyer.columns[[2,6]], axis='columns')
 
 per_buyer = data_buyer.groupby(['date', 'product','buyer_code']).sum()
 
-per_buyer.to_csv("./delete/per_buyer.csv", header=True, index=True, encoding='cp949')
+per_buyer.to_csv("./delete/per_buyer.csv", header=True, index=True, encoding='utf-8-sig')
 
 
 
 table = pd.read_csv("./dont_delete/table.csv", encoding='utf-8', error_bad_lines=False)
 table2 = pd.read_csv("./dont_delete/table2.csv", encoding='utf-8', error_bad_lines=False)
 
-data_buyer = pd.read_csv("./delete/per_buyer.csv", encoding='cp949')
+
+data_buyer = pd.read_csv("./delete/per_buyer.csv", encoding='utf-8-sig')
 
 
 for i in tqdm.trange(len(data_buyer)):
@@ -136,14 +130,5 @@ for i in tqdm.trange(len(table2)):
   if table2['매출금액'][i] == 0:
     table2['매출금액'][i] = '-'  
 
-table.to_csv("./result/result.csv", header=True, index=False, encoding='cp949')
-table2.to_csv("./result/result2.csv", header=True, index=False, encoding='cp949')
-
-
-# %%
-sum_qun_3
-
-
-# %%
-
-
+table.to_csv("./result/result.csv", header=True, index=False, encoding='utf-8-sig')
+table2.to_csv("./result/result2.csv", header=True, index=False, encoding='utf-8-sig')

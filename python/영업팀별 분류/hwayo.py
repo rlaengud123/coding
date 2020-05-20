@@ -12,7 +12,7 @@ import numpy as np
 
 # %%
 # data = pd.read_csv("/content/gdrive/My Drive/Colab Notebooks/hwayo.csv", encoding='utf-8')
-data = pd.read_csv("hwayo.csv", encoding='utf-8')
+data = pd.read_csv("hwayo.csv", encoding='utf-8-sig')
 
 
 data = data.drop(data.columns[[0,1,4,5,6,7,8,9,10,12,13,14,16,18,19]], axis='columns')
@@ -49,10 +49,10 @@ for i in tqdm.trange(len(data)):
 
 # %%
 # table = pd.read_csv("/content/gdrive/My Drive/Colab Notebooks/table.csv", encoding='utf-8')
-table = pd.read_csv("table.csv", encoding='utf-8')
+table = pd.read_csv("table.csv", encoding='utf-8-sig')
 table.rename(columns = {'Unnamed: 0' : 'alcohol', 'Unnamed: 1' : 'volume'}, inplace = True)
 # product_list = pd.read_csv("/content/gdrive/My Drive/Colab Notebooks/product_list.csv", encoding='utf-8')
-product_list = pd.read_csv("product_list.csv", encoding='utf-8')
+product_list = pd.read_csv("product_list.csv", encoding='utf-8-sig')
 
 
 # %%
@@ -106,7 +106,7 @@ for i in range(0,len(data)):
 
 # %%
 # table.to_csv("/content/gdrive/My Drive/Colab Notebooks/result.csv", header=True, index=False, encoding='cp949')
-table.to_csv("result.csv", header=True, index=False, encoding='cp949')
+table.to_csv("result.csv", header=True, index=False, encoding='utf-8-sig')
 
 
 # %%
